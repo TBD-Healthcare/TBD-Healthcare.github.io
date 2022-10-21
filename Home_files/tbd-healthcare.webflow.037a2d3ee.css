@@ -8238,7 +8238,10 @@ html.w-mod-js *[data-ix="hide-lightbox"] {
     width: 80%;
     padding: 20px;
   }
-
+.w-webflow-badge{
+display: None :important;
+   visibility: hidden :important;
+   }
   .iphone-hero {
     padding: 130px 25px 50px;
     text-align: center;
