@@ -1862,29 +1862,7 @@ Webflow.define('brand', module.exports = function ($) {
   }
 
   function ensureBrand() {
-    var found = $body.children(namespace);
-    var match = found.length && found.get(0) === brandElement;
-    var inEditor = Webflow.env('editor');
-
-    if (match) {
-      // Remove brand when Editor is active
-      if (inEditor) {
-        found.remove();
-      } // Exit early, brand is in place
-
-
-      return;
-    } // Remove any invalid brand elements
-
-
-    if (found.length) {
-      found.remove();
-    } // Append the brand (unless Editor is active)
-
-
-    if (!inEditor) {
-      $body.append(brandElement);
-    }
+    return;
   } // Export module
 
 
